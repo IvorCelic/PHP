@@ -118,7 +118,7 @@ create table assign_feedback_edit_pdf_cmnt(
 
 create table assign_user_mapping(
         assign_user_mapping_ID  bigint(10) not null primary key auto_increment,
-        assignment              bigint(10) not null, /** FK **/ klklk
+        assignment              bigint(10) not null, /** FK **/
         user_ID                 bigint(10) not null /** FK **/
     );
 
