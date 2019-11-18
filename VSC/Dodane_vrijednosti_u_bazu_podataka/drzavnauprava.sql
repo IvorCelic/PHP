@@ -115,3 +115,10 @@ insert into mjesto (mjesto_ID, naziv, opcina, broj_stanovnika) values
 (null, 'Štakorovec', 3, 281),
 (null, 'Teodrovec', 3, 111);
 #describe mjesto;
+
+
+update zupanija set naziv='Nije Točno' where zupanija_ID=18;
+update zupanija set naziv='Istarska županija' where zupanija_ID=18;
+
+delete from mjesto where mjesto_ID=26;
+delete from mjesto where mjesto_ID=25;
