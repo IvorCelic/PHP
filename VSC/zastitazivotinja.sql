@@ -29,3 +29,5 @@ create table sticenik (
 
 
 alter table sticenik add foreign key (prostor) references prostor(prostor_ID);
+
+samoproba
