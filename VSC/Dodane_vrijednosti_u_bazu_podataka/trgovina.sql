@@ -1,7 +1,7 @@
 drop database if exists trgovina;
 create database trgovina;
 use trgovina;
-
+#c:\xampp\mysql\bin\mysql.exe -uivor -pivor --default_character_set=utf8 < d:\Programiranje\GitHub\PHP\VSC\dodane_vrijednosti_u_bazu_podataka\trgovina.sql
 create table racun(
     racun_ID    int not null primary key auto_increment,
     datum       datetime,
@@ -68,3 +68,16 @@ insert into stavka (stavka_ID, racun, proizvod, kolicina) values
 # 4-6
 insert into stavka (stavka_ID, racun, proizvod, kolicina) values
 (null, 1, 3, 2), (null, 1, 2, 3), (null, 1, 3, 6);
+
+
+update operater set
+    ime='Karlo' where operater_ID=1;
+
+update racun set
+    redni_broj='50.' where racun_ID=1;
+
+delete from stavka where stavka_ID=1;
+delete from stavka where stavka_ID=2;
+delete from stavka where stavka_ID=3;
+delete from stavka where stavka_ID=5;
+delete from racun where racun_ID=2;
