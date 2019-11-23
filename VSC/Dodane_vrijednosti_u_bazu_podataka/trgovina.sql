@@ -1,5 +1,5 @@
 drop database if exists trgovina;
-create database trgovina;
+create database trgovina default character set utf8;
 use trgovina;
 #c:\xampp\mysql\bin\mysql.exe -uivor -pivor --default_character_set=utf8 < d:\Programiranje\GitHub\PHP\VSC\dodane_vrijednosti_u_bazu_podataka\trgovina.sql
 create table racun(

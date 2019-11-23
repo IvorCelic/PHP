@@ -1,7 +1,7 @@
 drop database if exists drzavnauprava;
-create database drzavnauprava;
+create database drzavnauprava set default character utf8;
 use drzavnauprava;
-
+#c:\xampp\mysql\bin\mysql.exe -uivor -pivor --default_character_set=utf8 < d:\Programiranje\GitHub\PHP\VSC\dodane_vrijednosti_u_bazu_podataka\drzavnauprava.sql
 create table zupanija(
     zupanija_ID int not null primary key auto_increment,
     naziv varchar(100) not null,
