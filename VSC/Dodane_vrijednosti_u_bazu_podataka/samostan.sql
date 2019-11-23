@@ -1,7 +1,7 @@
 drop database if exists samostan;
-create database samostan;
+create database samostan default character set utf8;
 use samostan;
-
+#c:\xampp\mysql\bin\mysql.exe -uivor -pivor --default_character_set=utf8 < d:\Programiranje\GitHub\PHP\VSC\dodane_vrijednosti_u_bazu_podataka\samostan.sql
 create table svecenik(
     svecenik_ID  int not null primary key auto_increment,
     ime          varchar(50) not null,
@@ -47,3 +47,7 @@ insert into svecenik_posao (svecenik, posao) values
 (1, 2), (1, 4),
 (2, 3), (2, 2),
 (3, 1), (3, 4);
+
+
+update svecenik set
+    nadredeni=2 where svecenik_ID=1;

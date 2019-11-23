@@ -1,7 +1,7 @@
 drop database if exists FrizerskiSalon;
 create database FrizerskiSalon;
 use FrizerskiSalon;
-
+#c:\xampp\mysql\bin\mysql.exe -uivor -pivor --default_character_set=utf8 < d:\Programiranje\GitHub\PHP\VSC\dodane_vrijednosti_u_bazu_podataka\frizerskisalon.sql
 create table djelatnica(
     djelatnica_ID   int not null primary key auto_increment,
     ime             varchar(50) not null,
@@ -108,3 +108,8 @@ insert into posjeta (posjeta_ID, vrijeme_od, vrijeme_do, korisnik, djelatnica, u
 insert into usluga_posjeta (usluga, posjeta) values (1, 1);
 insert into usluga_posjeta (usluga, posjeta) values (2, 2);
 insert into usluga_posjeta (usluga, posjeta) values (3, 3);
+
+
+update posjeta set
+    vrijeme_od='2019-11-15 14:00:00',
+    vrijeme_do='2019-11-15 15:00:00' where posjeta_ID=1;
